@@ -7,21 +7,21 @@ int main() {
 	float c = 1.5;
 	float d = 2.5;
 
-	printf("µ¡¼À : ");
+	printf("ë§ì…ˆ : ");
 	printf("a + b = %d\n", a + b);
 
-	printf("»¬¼À : ");
+	printf("ëº„ì…ˆ : ");
 	printf("a - b = %d\n", a - b);
 	printf("b - a = %d\n", b - a);
 
-	printf("°ö¼À : ");
+	printf("ê³±ì…ˆ : ");
 	printf("c * d = %f\n", c * d);
 
-	printf("³ª´°¼À : ");
+	printf("ë‚˜ëˆ—ì…ˆ : ");
 	printf("c / d = %f\n", c / d);
 
-	printf("³ª¸ÓÁö : ");
-	printf("a %% b = %d\n", a % b);
+	printf("ë‚˜ë¨¸ì§€ : ");
+	printf("a % b = %d\n", a % b);
 
 	return 0;
 }
