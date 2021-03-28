@@ -1,56 +1,54 @@
 #include <stdio.h>
-//ºñÆ® ¿¬»êÀÚ
+//ë¹„íŠ¸ ì—°ì‚°ìž
 int main() {
 
 	unsigned char a = 4;  // 0000 0100
 	unsigned char b = 8;  // 0000 1000
 	unsigned char c = a & b;
 
-	printf("\n4¿Í 8ÀÇ AND ¿¬»ê °ª : %d\n", c); // AND >> µÎ °³ÀÇ ºñÆ®°¡ ¸ðµÎ 1ÀÏ ¶§ 1 ¹ÝÈ¯ 
+	printf("\n4ì™€ 8ì˜ AND ì—°ì‚° ê°’ : %d\n", c); // AND >> ë‘ ê°œì˜ ë¹„íŠ¸ê°€ ëª¨ë‘ 1ì¼ ë•Œ 1 ë°˜í™˜ 
 
 		a = 6;  // 0000 0110
 		b = 13; // 0000 1101
 		c = a & b;
 
-	printf("6°ú 13ÀÇ AND ¿¬»ê °ª : %d\n", c);
+	printf("6ê³¼ 13ì˜ AND ì—°ì‚° ê°’ : %d\n", c);
 
 		unsigned char d = 4;  // 0000 0100
 		unsigned char e = 8;  // 0000 1000
 		unsigned char f = d | e;
 
-	printf("\n4¿Í 8ÀÇ OR ¿¬»ê °ª : %d\n", f); // OR >> µÎ °³ÀÇ ºñÆ® Áß ÇÏ³ª¶óµµ 1ÀÌ¸é 1 ¹ÝÈ¯
+	printf("\n4ì™€ 8ì˜ OR ì—°ì‚° ê°’ : %d\n", f); // OR >> ë‘ ê°œì˜ ë¹„íŠ¸ ì¤‘ í•˜ë‚˜ë¼ë„ 1ì´ë©´ 1 ë°˜í™˜
 
 		d = 6;  // 0000 0110
 		e = 13; // 0000 1101
 		f = d | e;
 
-	printf("6°ú 13ÀÇ OR ¿¬»ê °ª : %d\n", f);
+	printf("6ê³¼ 13ì˜ OR ì—°ì‚° ê°’ : %d\n", f);
 
 		unsigned char g = 4;  // 0000 0100
 		unsigned char h = 8;  // 0000 1000
 		unsigned char i = g ^ h;
 
-	printf("\n4¿Í 8ÀÇ XOR ¿¬»ê °ª : %d\n", i); // XOR >> µÎ °³ÀÇ ºñÆ®°¡ ¼­·Î ´Ù¸£¸é 1 ¹ÝÈ¯ 
+	printf("\n4ì™€ 8ì˜ XOR ì—°ì‚° ê°’ : %d\n", i); // XOR >> ë‘ ê°œì˜ ë¹„íŠ¸ê°€ ì„œë¡œ ë‹¤ë¥´ë©´ 1 ë°˜í™˜ 
 
 		g = 6;  // 0000 0110
 		h = 13; // 0000 1101
 		i = g ^ h;
 
-	printf("6°ú 13ÀÇ XOR ¿¬»ê °ª : %d\n", i);
+	printf("6ê³¼ 13ì˜ XOR ì—°ì‚° ê°’ : %d\n", i);
 
-		unsigned char j = 4;  // 0000 0100 // NOT¿¡¼­´Â unsignedÀ» ¾²Áö ¾Ê°í ºÎÈ£ÀÖ´Â Á¤¼ö¸¦ Ãâ·ÂÇÑ´Ù¸é - À½¼ö·Î Ãâ·Â >> MSB°¡ 1·Î ¹Ù²î±â ¶§¹®
+		unsigned char j = 4;  // 0000 0100 // NOTì—ì„œëŠ” unsignedì„ ì“°ì§€ ì•Šê³  ë¶€í˜¸ìžˆëŠ” ì •ìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤ë©´ - ìŒìˆ˜ë¡œ ì¶œë ¥ >> MSBê°€ 1ë¡œ ë°”ë€Œê¸° ë•Œë¬¸
 		unsigned char k = 8;  // 0000 1000
 		unsigned char l = ~j;
 		unsigned char m = ~k;
 
-	printf("\n4¿Í 8ÀÇ NOT ¿¬»ê °ª : %d, %d\n", l, m); // NOT >> AND, OR, XOR°ú´Â ´Ù¸£°Ô ÇÇ¿¬»êÀÚ >> ÇÑ °ªÀÇ ºñÆ®¸¦ ¸ðµÎ ¹ÝÀü
+	printf("\n4ì™€ 8ì˜ NOT ì—°ì‚° ê°’ : %d, %d\n", l, m); // NOT >> AND, OR, XORê³¼ëŠ” ë‹¤ë¥´ê²Œ í”¼ì—°ì‚°ìž >> í•œ ê°’ì˜ ë¹„íŠ¸ë¥¼ ëª¨ë‘ ë°˜ì „
 
 		j = 6;  // 0000 0110
 		k = 13; // 0000 1101
 		l = ~j;
 		m = ~k;
 
-	printf("6°ú 13ÀÇ NOT ¿¬»ê °ª : %d, %d\n", l, m);
-
-		
+	printf("6ê³¼ 13ì˜ NOT ì—°ì‚° ê°’ : %d, %d\n", l, m);
 }
