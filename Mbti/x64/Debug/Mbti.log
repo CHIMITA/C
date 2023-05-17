@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\chimita\source\repos\Mbti\Mbti\main.c(5,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': 매크로 재정의
+C:\Users\chimita\source\repos\Mbti\Mbti\main.c : message : '_CRT_SECURE_NO_WARNINGS'의 이전 정의를 참조하십시오.
+  Mbti.vcxproj -> C:\Users\chimita\source\repos\Mbti\x64\Debug\Mbti.exe
